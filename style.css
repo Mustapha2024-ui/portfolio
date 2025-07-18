@@ -1,0 +1,480 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    font-size: 90px;
+}
+
+:root{
+    --primary-color: #060805;
+    --secondary-color: #54C374;
+    --third-color:#777;
+    --bacground-color: #20231F;
+}
+
+.header{
+    background-color: var(--bacground-color);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 90vh;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+}
+
+nav{
+    background-color: var(--primary-color);
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+    height: 11vh;
+    padding: 10px 10%;
+    position: sticky;
+    top: 0;
+}
+
+.logo{
+    width: 140px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.content{
+    margin-top: 13%;
+}
+
+.sub-header{
+    max-width: 600px;
+}
+
+.content h1{
+    color: white;
+    line-height: 80px;
+}
+
+span{
+    color: var(--secondary-color);
+    font-size: 75px;
+}
+
+.content p{
+    color: white;
+    margin-top: 5%;
+}
+
+.btns{
+    text-decoration: none;
+    margin-top: 7%;
+}
+
+.btns a{
+    color: white;
+}
+
+.btn1:hover{
+    background-color: white;
+    border-color: white;
+    color: var(--primary-color);
+}
+
+.btn2:hover{
+    background-color: white;
+    border-color: white;
+    color: var(--primary-color);
+}
+
+.cvbtn:hover{
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.btn1{
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    padding: 14px 40px;
+    text-align: center;
+    border: solid 2px var(--secondary-color);
+}
+
+.btn2{
+    text-decoration: none;
+    padding: 14px 40px;
+    text-align: center;
+    border: solid 2px white;
+    margin-left: 10px;
+}
+
+.icons a img{
+    padding-top: 7%;
+}
+
+.hero-image{
+    position: absolute;
+    width: 550px;
+    margin-top: 7%;
+    right: 10%;
+}
+
+.stats{
+    background-color: var(--secondary-color);
+    width: 100%;
+    height: auto;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    text-align: center;
+    gap: 200px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    line-height: 50px;
+    z-index: -1;
+}
+
+.stats h1{
+    font-size: 60px;
+}
+
+.services{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    padding-bottom: 150px;
+    padding: 6px 10%;
+    overflow: hidden;
+    position: relative;
+    z-index: -1;
+}
+
+.service-text{
+    align-items: center;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.service-text h1{
+    font-size: 60px;
+}
+
+.service-cards{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+.cards{
+    background-color: var(--primary-color);
+    width: 417px;
+    height: 446px;
+    padding: 40px;
+    padding-top: 50px;
+}
+
+.service-cards h2{
+    color:var(--secondary-color);
+    font-size: 30px;
+    line-height: 35px;
+    padding-top: 20px;
+}
+
+.service-cards p{
+    color: white;
+    padding-top: 10px;
+}
+
+
+/* -----Mobile Responsiveness----- */
+
+
+
+/* -----About Me Page----- */
+
+.pages-header{
+    background-color: var(--bacground-color);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 10vh;
+    padding: 10px 10%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.about-link, .home-link, .portfolio-link, .contact-link{
+    color: var(--secondary-color);
+}
+
+.pages-header h1{
+    font-size: 60px;
+    line-height: 20px;
+}
+
+.about-text h1{
+    font-size: 45px;
+    line-height: 20px;
+}
+
+.about-text span{
+    font-size: 45px;
+}
+
+.btn1{
+    color: white;
+    text-decoration: none;
+}
+
+.about-content{
+    width: 61%;
+}
+
+.about-content h1{
+    font-size: 45px;
+    color: var(--primary-color);
+    margin-bottom: 3%;
+}
+
+.about-content span{
+    font-size: 45px;
+    padding-bottom: 3%;
+}
+
+.about-content p{
+    margin-bottom: 3%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-content a{
+    padding-left: 100px;
+}
+
+.btn3{
+    padding-top: 3%;
+}
+
+.btn3 a{
+    width: 100px;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 10%;
+}
+
+.about-parent{
+    height: auto;
+    padding: 5vh 0 5vh 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8%;
+    align-items: center;
+}
+
+.image-sec img{
+    width: 350px;
+}
+
+.about-content a{
+    padding: 2%;
+}
+
+/* -----Portfolio Page----- */
+
+.portfolio{
+    height: auto;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.portfolio-parent1, .portfolio-parent2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    padding-top: 0%;
+    margin-top: 15px;
+}
+
+.portfolio-parent1{
+    margin-top: 0px;
+}
+
+.project-cards{
+    height: 450px;
+    background-color: var(--primary-color);
+    width: 385px;
+}
+
+.child-card{
+    height: 230px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: 6%; */
+}
+
+.kooli{
+    background-image: url(kooli.png);
+}
+
+.morla{
+    background-image: url(morla.png);
+}
+
+.kente{
+    background-image: url(kente.png);
+}
+
+.ecowise{
+    background-image: url(ecowise.png);
+}
+
+.levis{
+    background-image: url(levis.png);
+}
+
+.fiatsend{
+    background-image: url(fiatsend.png);
+}
+
+.project-cards h2{
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding: 8%;
+    padding-top: 5%;
+    padding-bottom: 0;
+}
+
+.project-cards p{
+    color: white;
+    padding: 8%;
+    padding-top: 0px;
+}
+
+.project-cards a{
+    color: white;
+    background-color: var(--secondary-color);
+    text-decoration: none;
+    margin-left: 8%;
+}
+
+
+/* -----Contact Page----- */
+
+.fa-solid{
+    color: var(--secondary-color);
+    font-size: 30px;
+    padding-right: 20px;
+}
+
+.icon-text{
+    color: var(--primary-color);
+}
+
+#contact{
+    height: auto;
+    width: 100%;
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+.contact-head h1{
+    font-size: 45px;
+}
+
+.contact-head{
+    padding-bottom: 5%;
+}
+
+.contact-head p{
+    padding-bottom: 40px;
+}
+
+.contact-me{
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-details{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #9CA0AA;
+    background-color: #EDEEEE;
+}
+
+.contact-col textarea{
+    margin-bottom: 50px;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+
+/* -----Footer Section----- */
+
+footer{
+    background-color: var(--primary-color);
+    height: 11vh;
+    width: 100%;
+}
+
+footer p {
+    color: white;
+    align-items: center;
+    text-align: center;
+    padding-top: 30px;
+    justify-content: center;
+}
