@@ -15,13 +15,17 @@
 
 <body>
     <nav>
-        <img src="logo.png" class="logo">
-        <ul class="nav-links">
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html" class="portfolio-link">Portfolio</a></li>
+            <li><a href="portfolio.html" class="menu-link">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <section class="header pages-header">
         <div class="content">
@@ -75,6 +79,17 @@
     <footer>
         <p>&copy; 2025 Mustapha M. Salisu. All rights reserved.</p>
     </footer>
+<!-- -------JavaScript for Menu------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
 </body>
 
 </html>
