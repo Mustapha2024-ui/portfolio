@@ -11,50 +11,63 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-</head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
 
 <body>
     <nav>
-        <img src="logo.png" class="logo">
-        <ul class="nav-links">
-            <li><a href="index.html" class="home-link">Home</a></li>
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html" class="menu-link">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <section class="header">
-        <div class="content sub-header">
-            <h1>Hello, I’m<br><span>Mustapha M.</span></h1>
-            <p>A junior web developer and brand identity designer. I love exploring new technology tools to enhance my
-                projects and create innovative solutions. Let’s build something amazing together!</p>
-            <div class="btns">
-                <a class="btn1" href="contact.html">Hire Me</a>
-                <a class="btn2" href="about.html">Learn More</a>
-            </div>
-            <div class="icons">
-                <a href="https://github.com/Mustapha2024-ui"><img src="github.png" alt=""></a>
-                <a href="https://www.behance.net/brandmaster1gh"><img src="behance.png" alt=""></a>
-                <a href="https://www.instagram.com/taphakooli/?hl=en"><img src="insta.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/mustapha-m-salisu-1a5a58338/"><img src="linkedin.png" alt=""></a>
+        <div class="main">
+            <div class="hero-content">
+            <div class="hero-heading">
+                <h1 class="anim">Hello, I’m<br><span>Mustapha M.</span></h1>
+                <p class="anim">A technology-driven creative passionate about blending design with innovation. I thrive on exploring new
+                digital tools to build impactful solutions and meaningful user experiences. Let’s build something
+                amazing together!</p>
+                <div class="btns">
+                    <a class="btn1 anim" href="contact.html">Hire Me</a>
+                    <a class="btn2 anim" href="about.html">Learn More</a>
+                </div>
+                <div class="icons">
+                <a href="https://github.com/Mustapha2024-ui"><img src="github.png" class="anim"></a>
+                <a href="https://www.behance.net/brandmaster1gh"><img src="behance.png" class="anim" alt=""></a>
+                <a href="https://www.instagram.com/taphakooli/?hl=en"><img src="insta.png" class="anim"></a>
+                <a href="https://www.linkedin.com/in/mustapha-m-salisu-1a5a58338/"><img src="linkedin.png" class="anim"></a>
+                </div>
             </div>
         </div>
-        <img src="hero-image.png" class="hero-image" alt="">
+        <div class="hero-image">
+            <img src="hero-image.png" class="anim">
+        </div>
+        </div>
     </section>
 
-    <section class="stats">
+    <section class="stats-sec">
+    <div class="stats">
         <div class="experience">
-            <h1>02+</h1>
+            <h1 class="num">05+</h1>
             <p>Years Of Experience</p>
         </div>
         <div class="completed">
-            <h1>10+</h1>
+            <h1 class="num">10+</h1>
             <p>Projects Completed</p>
         </div>
         <div class="ongoing">
-            <h1>3+</h1>
+            <h1 class="num" data-val="03">3+</h1>
             <p>Ongoing Projects</p>
         </div>
+    </div>
     </section>
 
     <section class="services">
@@ -62,7 +75,8 @@
             <h1>What I’m Offering</h1>
             <p>I offer a unique blend of skills to elevate your brand's online presence.<br>My services includes:</p>
         </div>
-        <div class="service-cards">
+        <div class="cards-parent">
+            <div class="service-cards">
             <div class="cards card1">
                 <img src="code.png" alt="">
                 <h2>Website Development</h2>
@@ -82,10 +96,22 @@
                     and values.</p>
             </div>
         </div>
+        </div>
     </section>
     <footer>
         <p>&copy; 2025 Mustapha M. Salisu. All rights reserved.</p>
     </footer>
+
+    <!-- -------JavaScript for Menu------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
 </body>
 
 </html>
