@@ -15,13 +15,17 @@
 
 <body>
     <nav>
-        <img src="logo.png" class="logo">
-        <ul class="nav-links">
+        <a href="index.html"><img src="logo.png" class="logo"></a>
+        <div class="nav-links" id="navLinks">
+             <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-link">Contact</a></li>
+            <li><a href="contact.html" class="menu-link">Contact</a></li>
         </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <section class="header pages-header">
         <div class="content">
@@ -35,36 +39,37 @@
                     <div class="contact-head">
                         <h1>Let’s Talk Business</h1>
                         <p>
-                            Now that you know a lot about me, let me know <br>
+                            Now that you know a lot about me, let me know
                             if you are interested to work with me. I am
-                            open <br>for collaboration on projects.
+                            open for collaboration on projects.
                         </p>
                     </div>
                     <div class="contact-details">
-                        <i class="fa-solid fa-location-dot"></i>
+                        <i class="fa-solid fa-location-dot con-icons"></i>
                         <span>
                             <p class="icon-text">26 Cotton Avenue <br>Kokomlemle-Accra</p>
                         </span>
                     </div>
                     <div class="contact-details">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <i class="fa-solid fa-mobile-screen-button con-icons"></i>
                         <span>
                             <p class="icon-text">+233(0) 54 324 0383 <br>Monday to Saturday, 8AM - 8PM</p>
                         </span>
                     </div>
                     <div class="contact-details">
-                        <i class="fa-solid fa-envelope"></i>
+                        <i class="fa-solid fa-envelope con-icons"></i>
                         <span>
                             <p class="icon-text">mustaphamohsalisu@gmail.com <br>Email me your query</p>
                         </span>
                     </div>
                 </div>
-                <div class="contact-col">
-                    <form action="">
-                        <input type="text" placeholder="Enter your name" required>
-                        <input type="email" placeholder="Enter email address" required>
-                        <input type="text" placeholder="Enter your subject" required>
-                        <textarea rows="8" placeholder="Message" required></textarea>
+                <div class="contact-col contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact">
+                        <input type="hidden" name="access_key" value="29796dc0-66f5-4ae6-b6b9-27bc45f504f5">
+                        <input type="text" name="name" placeholder="Enter your name" required>
+                        <input type="email" name="email" placeholder="Enter email address" required>
+                        <input type="text" name="subject" placeholder="Enter your subject" required>
+                        <textarea rows="8" name="message" placeholder="Message" required></textarea>
                         <a class="btn1 cvbtn" href="">Submit</a>
                     </form>
                 </div>
@@ -74,6 +79,17 @@
     <footer>
         <p>&copy; 2025 Mustapha M. Salisu. All rights reserved.</p>
     </footer>
+<!-- -------JavaScript for Menu------- -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+        function showMenu(){
+            navLinks.style.right = "0"
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px"
+        }
+    </script>
+
 </body>
 
 </html>
